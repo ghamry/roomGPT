@@ -9,7 +9,7 @@ export default function HomePage() {
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-20 background-gradient">
-        <a
+        <Link
           href="https://vercel.fyi/roomGPT"
           target="_blank"
           rel="noreferrer"
@@ -17,7 +17,7 @@ export default function HomePage() {
         >
           Clone and deploy your own with{" "}
           <span className="text-blue-600">Vercel</span>
-        </a>
+        </Link>
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-300 sm:text-7xl">
           Generating dream rooms{" "}
           <span className="relative whitespace-nowrap text-blue-600">

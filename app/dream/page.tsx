@@ -15,6 +15,7 @@ import appendNewToName from "../../utils/appendNewToName";
 import downloadPhoto from "../../utils/downloadPhoto";
 import DropDown from "../../components/DropDown";
 import { roomType, rooms, themeType, themes } from "../../utils/dropdownTypes";
+import Link from "next/link";
 
 // Configuration for the uploader
 const uploader = Uploader({
@@ -165,9 +166,8 @@ export default function DreamPage() {
                 </div>
               )}
               <div
-                className={`${
-                  restoredLoaded ? "visible mt-6 -ml-8" : "invisible"
-                }`}
+                className={`${restoredLoaded ? "visible mt-6 -ml-8" : "invisible"
+                  }`}
               >
                 <Toggle
                   className={`${restoredLoaded ? "visible mb-6" : "invisible"}`}
@@ -205,7 +205,7 @@ export default function DreamPage() {
                   </div>
                   <div className="sm:mt-0 mt-8">
                     <h2 className="mb-1 font-medium text-lg">Generated Room</h2>
-                    <a href={restoredImage} target="_blank" rel="noreferrer">
+                    <Link href={restoredImage} target="_blank" rel="noreferrer">
                       <Image
                         alt="restored photo"
                         src={restoredImage}
@@ -214,7 +214,7 @@ export default function DreamPage() {
                         height={475}
                         onLoadingComplete={() => setRestoredLoaded(true)}
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               )}
