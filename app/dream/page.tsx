@@ -206,13 +206,13 @@ export default function DreamPage() {
                   <div className="sm:mt-0 mt-8">
                     <h2 className="mb-1 font-medium text-lg">Generated Room</h2>
                     <Link href={restoredImage} target="_blank" rel="noreferrer">
-                      <Image
+                      <img
                         alt="restored photo"
                         src={restoredImage}
                         className="rounded-2xl relative sm:mt-0 mt-2 cursor-zoom-in w-full h-96"
                         width={475}
-                        height={475}
-                        onLoadingComplete={() => setRestoredLoaded(true)}
+                        height={475} onLoad={() => setRestoredLoaded(true)}
+
                       />
                     </Link>
                   </div>
