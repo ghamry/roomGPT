@@ -17,6 +17,7 @@ import DropDown from "../../components/DropDown";
 import { roomType, rooms, themeType, themes } from "../../utils/dropdownTypes";
 import Link from "next/link";
 
+
 // Configuration for the uploader
 const uploader = Uploader({
   apiKey: !!process.env.NEXT_PUBLIC_UPLOAD_API_KEY
@@ -95,6 +96,7 @@ export default function DreamPage() {
   }
 
   return (
+
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
@@ -270,5 +272,6 @@ export default function DreamPage() {
       </main>
       <Footer />
     </div>
+
   );
 }

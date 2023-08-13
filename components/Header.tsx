@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LoginBtn from "./LoginBtn";
 
 export default function Header() {
   return (
@@ -25,6 +26,10 @@ export default function Header() {
         <Github />
         <p>Star on GitHub</p>
       </Link> */}
+      <div>
+        <p>Log In GitHub</p>
+        {/* <LoginBtn /> */}
+      </div>
     </header>
   );
 }
