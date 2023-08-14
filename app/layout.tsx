@@ -1,6 +1,10 @@
+"use client";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import "../styles/globals.css";
+
+import { SessionProvider } from "next-auth/react";
+
 
 let title = "Dream Room Generator";
 let description = "Generate your dream room in seconds.";
@@ -38,7 +42,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#17181C] text-white">
-        {children}
+        <SessionProvider>
+          {children}
+        </SessionProvider>
         <Analytics />
       </body>
     </html>
