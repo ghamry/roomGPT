@@ -3,7 +3,34 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
+import { Metadata } from "next";
+let title = "Dream Room Generator";
+let description = "Generate your dream room in seconds.";
+let ogimage = "https://roomgpt-demo.vercel.app/og-image.png";
+let sitename = "roomGPT.io";
 
+export const metadata: Metadata = {
+  title,
+  description,
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    images: [ogimage],
+    title,
+    description,
+    url: "https://roomgpt-demo.vercel.app",
+    siteName: sitename,
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [ogimage],
+    title,
+    description,
+  },
+};
 export default function HomePage() {
   return (
     <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
