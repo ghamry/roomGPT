@@ -26,17 +26,27 @@ export default function HomePage() {
             <SquigglyLines />
             <span className="relative">Should I Buy !</span>
           </span>{" "}
-          for everyone.
         </h1>
-        <h2 className="mx-auto mt-12 max-w-xl text-lg sm:text-gray-400  text-gray-500 leading-7">
+        {/* <h2 className="mx-auto mt-12 max-w-xl text-lg sm:text-gray-400  text-gray-500 leading-7">
           just type the product name
-        </h2>
-        <input type="text" ></input>
+        </h2> */}
+        <div className="searchbox">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+          <input
+            aria-label="Just type the product name"
+            autoComplete="off"
+            inputMode="search"
+            placeholder="Just type the product name"
+            type="search"
+          />
+        </div>
         <Link
-          className="bg-blue-600 rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-blue-500 transition"
-          href="/dream"
-        >
-          Search
+          className="bg-blue-600 rounded-xl text-white font-medium px-4 py-3 sm:mt-20 mt-20 hover:bg-blue-500 transition"
+          href="/dream">Search
         </Link>
         {/* <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <div className="flex flex-col space-y-10 mt-4 mb-16">
