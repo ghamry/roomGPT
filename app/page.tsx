@@ -21,15 +21,13 @@ export default function HomePage() {
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-20 mt-20 background-gradient">
 
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-300 sm:text-7xl">
-          Your one-stop destination for effortless and efficient product searches. {" "}
+          Your onSSSe-stop destination for effortless and efficient product searches. {" "}
           <span className="relative whitespace-nowrap text-blue-600">
             <SquigglyLines />
             <span className="relative">Should I Buy !</span>
           </span>{" "}
         </h1>
-        {/* <h2 className="mx-auto mt-12 max-w-xl text-lg sm:text-gray-400  text-gray-500 leading-7">
-          just type the product name
-        </h2> */}
+
         <div className="searchbox">
           <svg aria-hidden="true" viewBox="0 0 24 24">
             <path
@@ -42,6 +40,7 @@ export default function HomePage() {
             inputMode="search"
             placeholder="Just type the product name"
             type="search"
+
           />
         </div>
         <Link
