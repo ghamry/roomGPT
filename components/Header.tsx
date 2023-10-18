@@ -6,7 +6,7 @@ import Link from "next/link";
 import LoginBtn from "./LoginBtn";
 
 export default function Header() {
-  const { data: session } = useSession();
+ 
 
 
   return (
@@ -20,11 +20,11 @@ export default function Header() {
           height={24}
         />
         <h1 className="sm:text-3xl text-xl font-bold ml-2 tracking-tight">
-          Should I Buy !SSSSSSSSSS
+          Should I Buy !
         </h1>
       </Link>
 
-      <LoginBtn></LoginBtn>
+      <LoginBtn/>
 
     </header>
   );
