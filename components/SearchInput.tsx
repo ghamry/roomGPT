@@ -13,8 +13,8 @@ function SearchInput() {
     const handleKeyDown = (event: { key: string; }) => {
         if (event.key === 'Enter') {
             debugger
-            // should navigate to  "/searchResult"  
-            redirect("/searchResult?p=" + product)
+            // should navigate to  "/searchResult but first store the product"  
+            redirect("/searchResult")
         }
     };
 
