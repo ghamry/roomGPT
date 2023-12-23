@@ -1,6 +1,5 @@
 import Link from "next/link";
 import SquigglyLines from "../components/SquigglyLines";
-import { Metadata } from "next";
 import SearchInput from "../components/SearchInput";
 
 export default function HomePage() {

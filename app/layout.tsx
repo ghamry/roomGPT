@@ -12,7 +12,7 @@ let title = "Should I Buy ?";
 let description = "fin the best deal in seconds.";
 
 
-export const metadata: Metadata = {
+ const metadata: Metadata = {
   title,
   description,
   icons: {
