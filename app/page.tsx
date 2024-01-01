@@ -1,10 +1,14 @@
 import Link from "next/link";
 import SquigglyLines from "../components/SquigglyLines";
 import SearchInput from "../components/SearchInput";
+ 
 
-export default function HomePage() {
+
+ 
+
+export default async function HomePage() {
+
   return (
-
     <>
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-gray-300 sm:text-7xl">
         Your one-stop destination for effortless and efficient product searches. {" "}
@@ -18,8 +22,9 @@ export default function HomePage() {
 
       <Link
         className="bg-blue-600 rounded-xl text-white font-medium px-4 py-3 sm:mt-20 mt-20 hover:bg-blue-500 transition"
-        href="/searchResult">searchResult
+        href="/searchResult" >search Result
       </Link>
+
     </>
 
 
